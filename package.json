@@ -7,11 +7,11 @@
 
   "version": "0.0.0",
 
-  "main": "index.js",
+  "main": "Frics.js",
 
   "scripts": {
 
-    "start": "node index.js"
+    "start": "node Frics.js"
 
   },
 
