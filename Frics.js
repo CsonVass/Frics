@@ -3,12 +3,6 @@ const Discord = require("discord.js");
 
 const bot = new Discord.Client({disableEveryone: true});
 
-bot.on("ready", async () => {
-
-  console.log(`${bot.user.username} is online!`);
-
-});
-
 
 bot.on("message", async message => {
   if(message.author.bot) return;
