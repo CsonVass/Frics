@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 
 
 const bot = new Discord.Client({disableEveryone: true});
-let tanarok = require("./tanarok.json");
 
 bot.on("ready", async () => {
 
@@ -16,7 +15,7 @@ bot.on("message", async message => {
   if(message.channel.type === "dm") return;
 
 
-  let prefix = botconfig.prefix;
+  let prefix = "!";
   let messageArray = message.content.split(";");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
